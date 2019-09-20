@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #CDC9C9;
+}
+#clock{
+	height: 400px;
+	width: 400px;
+	margin: 200px auto;
+	border-radius: 50% 50%;
+	box-shadow: 0 0 15px rgba(238,0,0,0.7);
+	position: relative;
+	background-color: #FFF0F5
+
+}
+#clock >div {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+#logo{
+	height: 150px;
+	width: 250px;
+	margin: 20px -125px;
+	background-color: transparent;
+	text-align: center;
+	font-family: rubik;
+}
+.timeline{
+	width: 4px;
+	height: 400px;
+	background-color: transparent;
+	margin: -200px -2px;
+ 
+}
+.timeline >div{
+	height: 16px;
+	width: 100%;
+	background-color: #8B7D6B;
+}
+.bottom{
+	margin-top: 368px;
+	border-radius: 2px 2px 0px 0px;
+}
+#timeline1{
+	transform: rotate(0);
+}
+#timeline2{
+	transform: rotate(30deg);
+}
+#timeline3{
+	transform: rotate(60deg);
+}
+#timeline4{
+	transform: rotate(90deg);
+}
+#timeline5{
+	transform: rotate(120deg);
+}
+#timeline6{
+	transform: rotate(150deg);
+}
+
+#node{
+	width: 10px;
+	height: 10px;
+	border-radius: 50% 50%;
+	background-color: red;
+	margin: -5px -5px;
+
+}
+#hourhand{
+	height: 200px;
+	width: 6px;
+	margin: -100px -3px;
+	background-color: transparent; 
+	transform: rotate(6deg);
+	transition: transform 3600s linear;
+	
+}
+
+#hourhand div{
+	height: 110px;
+	width: 6px;
+	background-color: red; 
+	border-radius:3px 3px 0 0 ;
+	box-shadow: 0 0 5px rgba(238,0,0,0.7);
+	
+}
+#minutehand{
+	height: 300px;
+	width: 4px;
+	margin: -150px -2px;
+	background-color: transparent; 
+	transform: rotate(360deg);
+	transition: transform 3600s linear;
+	
+}
+
+#minutehand div{
+	height: 160px;
+	width: 4px;
+	background-color: red;
+	border-radius:2px 2px 0 0 ;
+	box-shadow: 0 0 5px rgba(238,0,0,0.7);	
+}
+
+#secondhand{
+	height: 350px;
+	width: 2px;
+	margin: -175px -1px;
+	background-color: transparent; 
+	transform: rotate(21600deg);
+	transition: transform 3600s linear;
+	
+}
+
+#secondhand div{
+	height: 185px;
+	border-radius:1px 1px 0 0 ;
+	box-shadow: 0 0 5px rgba(238,0,0,0.7);
+	width: 2px;
+	background-color: red; 
+	
+}
